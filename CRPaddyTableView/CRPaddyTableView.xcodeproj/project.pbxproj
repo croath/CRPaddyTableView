@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		272D602117F07A780000EA19 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 277510AB17EF3EB100201000 /* Foundation.framework */; };
+		272D602E17F07A780000EA19 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 277510CA17EF3EB100201000 /* XCTest.framework */; };
+		272D602F17F07A780000EA19 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 277510AB17EF3EB100201000 /* Foundation.framework */; };
+		272D603017F07A780000EA19 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 277510AF17EF3EB100201000 /* UIKit.framework */; };
+		272D603317F07A780000EA19 /* liblibpaddy.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 272D602017F07A780000EA19 /* liblibpaddy.a */; };
+		272D603917F07A780000EA19 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 272D603717F07A780000EA19 /* InfoPlist.strings */; };
+		272D603B17F07A780000EA19 /* libpaddyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 272D603A17F07A780000EA19 /* libpaddyTests.m */; };
+		272D604217F07AAE0000EA19 /* CRPaddyTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 277510E417EF408000201000 /* CRPaddyTableView.m */; };
 		277510AC17EF3EB100201000 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 277510AB17EF3EB100201000 /* Foundation.framework */; };
 		277510AE17EF3EB100201000 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 277510AD17EF3EB100201000 /* CoreGraphics.framework */; };
 		277510B017EF3EB100201000 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 277510AF17EF3EB100201000 /* UIKit.framework */; };
@@ -25,6 +33,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		272D603117F07A780000EA19 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 277510A017EF3EB100201000 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 272D601F17F07A780000EA19;
+			remoteInfo = libpaddy;
+		};
 		277510CE17EF3EB100201000 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 277510A017EF3EB100201000 /* Project object */;
@@ -34,7 +49,25 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		272D601E17F07A780000EA19 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		272D602017F07A780000EA19 /* liblibpaddy.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = liblibpaddy.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		272D602417F07A780000EA19 /* libpaddy-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "libpaddy-Prefix.pch"; sourceTree = "<group>"; };
+		272D602D17F07A780000EA19 /* libpaddyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = libpaddyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		272D603617F07A780000EA19 /* libpaddyTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "libpaddyTests-Info.plist"; sourceTree = "<group>"; };
+		272D603817F07A780000EA19 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		272D603A17F07A780000EA19 /* libpaddyTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = libpaddyTests.m; sourceTree = "<group>"; };
 		277510A817EF3EB100201000 /* CRPaddyTableView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CRPaddyTableView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		277510AB17EF3EB100201000 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		277510AD17EF3EB100201000 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -54,11 +87,30 @@
 		277510D217EF3EB100201000 /* CRPaddyTableViewTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CRPaddyTableViewTests-Info.plist"; sourceTree = "<group>"; };
 		277510D417EF3EB100201000 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		277510D617EF3EB100201000 /* CRPaddyTableViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CRPaddyTableViewTests.m; sourceTree = "<group>"; };
-		277510E317EF408000201000 /* CRPaddyTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRPaddyTableView.h; sourceTree = "<group>"; };
-		277510E417EF408000201000 /* CRPaddyTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRPaddyTableView.m; sourceTree = "<group>"; };
+		277510E317EF408000201000 /* CRPaddyTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CRPaddyTableView.h; path = ../CRPaddyTableView/CRPaddyTableView.h; sourceTree = "<group>"; };
+		277510E417EF408000201000 /* CRPaddyTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CRPaddyTableView.m; path = ../CRPaddyTableView/CRPaddyTableView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		272D601D17F07A780000EA19 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				272D602117F07A780000EA19 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		272D602A17F07A780000EA19 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				272D603317F07A780000EA19 /* liblibpaddy.a in Frameworks */,
+				272D602E17F07A780000EA19 /* XCTest.framework in Frameworks */,
+				272D603017F07A780000EA19 /* UIKit.framework in Frameworks */,
+				272D602F17F07A780000EA19 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		277510A517EF3EB100201000 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -82,11 +134,49 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		272D602217F07A780000EA19 /* libpaddy */ = {
+			isa = PBXGroup;
+			children = (
+				277510E317EF408000201000 /* CRPaddyTableView.h */,
+				277510E417EF408000201000 /* CRPaddyTableView.m */,
+				272D602317F07A780000EA19 /* Supporting Files */,
+			);
+			path = libpaddy;
+			sourceTree = "<group>";
+		};
+		272D602317F07A780000EA19 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				272D602417F07A780000EA19 /* libpaddy-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		272D603417F07A780000EA19 /* libpaddyTests */ = {
+			isa = PBXGroup;
+			children = (
+				272D603A17F07A780000EA19 /* libpaddyTests.m */,
+				272D603517F07A780000EA19 /* Supporting Files */,
+			);
+			path = libpaddyTests;
+			sourceTree = "<group>";
+		};
+		272D603517F07A780000EA19 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				272D603617F07A780000EA19 /* libpaddyTests-Info.plist */,
+				272D603717F07A780000EA19 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		2775109F17EF3EB100201000 = {
 			isa = PBXGroup;
 			children = (
 				277510B117EF3EB100201000 /* CRPaddyTableView */,
 				277510D017EF3EB100201000 /* CRPaddyTableViewTests */,
+				272D602217F07A780000EA19 /* libpaddy */,
+				272D603417F07A780000EA19 /* libpaddyTests */,
 				277510AA17EF3EB100201000 /* Frameworks */,
 				277510A917EF3EB100201000 /* Products */,
 			);
@@ -97,6 +187,8 @@
 			children = (
 				277510A817EF3EB100201000 /* CRPaddyTableView.app */,
 				277510C917EF3EB100201000 /* CRPaddyTableViewTests.xctest */,
+				272D602017F07A780000EA19 /* liblibpaddy.a */,
+				272D602D17F07A780000EA19 /* libpaddyTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -120,8 +212,6 @@
 				277510BD17EF3EB100201000 /* Main.storyboard */,
 				277510C017EF3EB100201000 /* ViewController.h */,
 				277510C117EF3EB100201000 /* ViewController.m */,
-				277510E317EF408000201000 /* CRPaddyTableView.h */,
-				277510E417EF408000201000 /* CRPaddyTableView.m */,
 				277510C317EF3EB100201000 /* Images.xcassets */,
 				277510B217EF3EB100201000 /* Supporting Files */,
 			);
@@ -160,6 +250,41 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		272D601F17F07A780000EA19 /* libpaddy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 272D604017F07A780000EA19 /* Build configuration list for PBXNativeTarget "libpaddy" */;
+			buildPhases = (
+				272D601C17F07A780000EA19 /* Sources */,
+				272D601D17F07A780000EA19 /* Frameworks */,
+				272D601E17F07A780000EA19 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = libpaddy;
+			productName = libpaddy;
+			productReference = 272D602017F07A780000EA19 /* liblibpaddy.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		272D602C17F07A780000EA19 /* libpaddyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 272D604117F07A780000EA19 /* Build configuration list for PBXNativeTarget "libpaddyTests" */;
+			buildPhases = (
+				272D602917F07A780000EA19 /* Sources */,
+				272D602A17F07A780000EA19 /* Frameworks */,
+				272D602B17F07A780000EA19 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				272D603217F07A780000EA19 /* PBXTargetDependency */,
+			);
+			name = libpaddyTests;
+			productName = libpaddyTests;
+			productReference = 272D602D17F07A780000EA19 /* libpaddyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		277510A717EF3EB100201000 /* CRPaddyTableView */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 277510DA17EF3EB100201000 /* Build configuration list for PBXNativeTarget "CRPaddyTableView" */;
@@ -204,6 +329,9 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = Croath;
 				TargetAttributes = {
+					272D602C17F07A780000EA19 = {
+						TestTargetID = 277510A717EF3EB100201000;
+					};
 					277510C817EF3EB100201000 = {
 						TestTargetID = 277510A717EF3EB100201000;
 					};
@@ -224,11 +352,21 @@
 			targets = (
 				277510A717EF3EB100201000 /* CRPaddyTableView */,
 				277510C817EF3EB100201000 /* CRPaddyTableViewTests */,
+				272D601F17F07A780000EA19 /* libpaddy */,
+				272D602C17F07A780000EA19 /* libpaddyTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		272D602B17F07A780000EA19 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				272D603917F07A780000EA19 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		277510A617EF3EB100201000 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -250,6 +388,22 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		272D601C17F07A780000EA19 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				272D604217F07AAE0000EA19 /* CRPaddyTableView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		272D602917F07A780000EA19 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				272D603B17F07A780000EA19 /* libpaddyTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		277510A417EF3EB100201000 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -272,6 +426,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		272D603217F07A780000EA19 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 272D601F17F07A780000EA19 /* libpaddy */;
+			targetProxy = 272D603117F07A780000EA19 /* PBXContainerItemProxy */;
+		};
 		277510CF17EF3EB100201000 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 277510A717EF3EB100201000 /* CRPaddyTableView */;
@@ -280,6 +439,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		272D603717F07A780000EA19 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				272D603817F07A780000EA19 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
 		277510B417EF3EB100201000 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -307,6 +474,78 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		272D603C17F07A780000EA19 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				DSTROOT = /tmp/libpaddy.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "libpaddy/libpaddy-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		272D603D17F07A780000EA19 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				DSTROOT = /tmp/libpaddy.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "libpaddy/libpaddy-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		272D603E17F07A780000EA19 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/CRPaddyTableView.app/CRPaddyTableView";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "libpaddy/libpaddy-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "libpaddyTests/libpaddyTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		272D603F17F07A780000EA19 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/CRPaddyTableView.app/CRPaddyTableView";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "libpaddy/libpaddy-Prefix.pch";
+				INFOPLIST_FILE = "libpaddyTests/libpaddyTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
 		277510D817EF3EB100201000 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -450,6 +689,22 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		272D604017F07A780000EA19 /* Build configuration list for PBXNativeTarget "libpaddy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				272D603C17F07A780000EA19 /* Debug */,
+				272D603D17F07A780000EA19 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		272D604117F07A780000EA19 /* Build configuration list for PBXNativeTarget "libpaddyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				272D603E17F07A780000EA19 /* Debug */,
+				272D603F17F07A780000EA19 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		277510A317EF3EB100201000 /* Build configuration list for PBXProject "CRPaddyTableView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -466,6 +721,7 @@
 				277510DC17EF3EB100201000 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		277510DD17EF3EB100201000 /* Build configuration list for PBXNativeTarget "CRPaddyTableViewTests" */ = {
 			isa = XCConfigurationList;
@@ -474,6 +730,7 @@
 				277510DF17EF3EB100201000 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
