@@ -21,12 +21,23 @@
     self = [super initWithFrame:frame];
     if (self) {
         // Initialization code
-        _pAnimator = [[UIDynamicAnimator alloc] initWithReferenceView:self];
-        [_pAnimator addBehavior:_gBehavior];
+        [self _commonInit];
     }
     return self;
 }
 
+- (id)initWithCoder:(NSCoder *)aDecoder {
+    self = [super initWithCoder: aDecoder];
+    if (self) {
+        [self _commonInit];
+    }
+    return self;
+}
+
+-(void)_commonInit{
+    _pAnimator = [[UIDynamicAnimator alloc] initWithReferenceView:self];
+    [_pAnimator addBehavior:_gBehavior];
+}
 
 - (void)addBehaviorsToCell:(UITableViewCell*)cell{
     for (UIDynamicBehavior* b in _pAnimator.behaviors) {
